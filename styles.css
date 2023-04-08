@@ -244,11 +244,13 @@ body{
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease-in-out;
+  border-colour: black;
 }
 .rsvp:hover {
   background-color: #b1afae;
   text-decoration: none;
   color: grey;
+  border-colour: black;
 }
 
 
