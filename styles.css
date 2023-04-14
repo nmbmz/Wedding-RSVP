@@ -1,68 +1,5 @@
 @import "https://unpkg.com/transition-style";
 
-@media only screen and (min-width: 500px) {
-  .container {
-    max-width: 70%;
-  }
-}
-
-@media only screen and (max-width: 499px){
-  
-  .headerdiv{
-    height: 100vh !important; 
-    margin-bottom: -15vh !important;
-    margin-top: -15vh !important;
-}
-.parent:nth-of-type(1) {
-  height: 100vh !important; 
-}
-.parent:nth-of-type(2) {
-  height: 100vh !important; 
-}
-.groom {
-  scale: 0.11 !important;
-  display: none;
-}
-.bride {
-  scale: 0.20 !important;
-  left: 30% !important;
-  top: 32% !important;
-  display: none;
-}
-  .ust_text {
-    font-size: 17px !important;
-    margin-top: 28vh !important;
-  }
-  .bismillah {
-    font-size: 7px !important;
-  }
-  .ust_text2 {
-    margin-top: -10px !important;
-    font-size: 7px !important;
-  }
-  .main-heading {
-    margin-top: -5px !important;
-    margin-top: 30px !important;
-  }
-  .main-heading h1 {
-    font-size: 55px !important;
-  }
-  .surah {
-    margin-top: 3em !important;
-  }
-  .surah h6{
-    font-size: 9px !important;
-  }
-  .surah h5 {
-    font-size: 15px !important;
-  }
-  .chevron {
-    margin-top: 7vh !important;
-  }
-
-
-}
-
 .surah {
   margin-top: 5em;
   color: grey;
@@ -107,7 +44,7 @@ body{
 .main-heading {
   display: flex;
   justify-content: center;
-  font-family: 'Dancing Script' !important;
+  font-family: 'Dancing Script' ;
   z-index: 3;
   font-size: 55px;
   margin-top: 50px;
@@ -148,7 +85,7 @@ body{
   text-decoration: none;
   padding: 30px;
   background-color: #F9F5F3;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 
 }
 
@@ -189,7 +126,7 @@ body{
   align-items: center;
 }
 .title-detail{
-    font-family: 'Dancing Script' !important;
+    font-family: 'Dancing Script' ;
     font-size: 30px;
     line-height: 2em;
     color: grey;
@@ -205,7 +142,7 @@ body{
     text-align: left;
 }
 .title-detail2{
-    font-family: 'Dancing Script', cursive !important;
+    font-family: 'Dancing Script', cursive ;
     font-size: 25px;
     border-bottom: 1px solid #e0dcda;
 }
@@ -232,7 +169,7 @@ body{
   
 .heading {
   font-size: 25px;
-  font-family: 'Dancing Script' !important;
+  font-family: 'Dancing Script' ;
   color: grey;
 }
 .details {
@@ -422,6 +359,127 @@ body{
     background-color: #b1afae;
     text-decoration: none;
     color: black;
+  }
+
+
+  @media only screen and (min-width: 500px) {
+    .container {
+      max-width: 70%;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    
+  .parent:nth-of-type(1) {
+    height: 100% ; 
+  }
+  .parent:nth-of-type(2) {
+    height: 100vh ; 
+  }
+  .groom {
+    scale: 0.11 ;
+    display: none;
+  }
+  .bride {
+    scale: 0.20 ;
+    left: 30% ;
+    top: 32% ;
+    display: none;
+  }
+    .ust_text {
+      font-size: 17px ;
+      margin-top: 100px ;
+    }
+    .bismillah {
+      font-size: 7px ;
+    }
+    .ust_text2 {
+      margin-top: -10px ;
+      font-size: 7px ;
+    }
+    .main-heading {
+      margin-top: -5px ;
+      margin-top: 30px ;
+    }
+    .main-heading h1 {
+      font-size: 50px;
+    }
+    .surah {
+      margin-top: 3em ;
+    }
+    .surah h6{
+      font-size: 9px ;
+    }
+    .surah h5 {
+      font-size: 15px ;
+    }
+    .chevron {
+      margin-top: 7vh ;
+    }
+  
+    .chevron2{
+      margin-top: 2vh ;
+      margin-bottom: 3vh ;
+    }
+  
+    .heading{
+      font-size: 25px ;
+    }
+  
+    .p-heading {
+      font-size: 12px ;
+    }
+    .title-detail {
+      font-size: 20px ;
+    }
+    
+  }
+
+  @media only screen and (max-height: 559px) {
+    .ust_text {
+      font-size: 17px ;
+      margin-top: 50px ;
+    }
+    .main-heading h1 {
+      font-size: 45px;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    .ust_text {
+      font-size: 17px ;
+      margin-top: 50px ;
+    }
+    .main-heading h1 {
+      font-size: 45px;
+    }
+  }
+
+  @media only screen and (max-height: 665px) {
+    .icon {
+      height : 27px;
+      margin: 7px;
+    }
+    .heading {
+      font-size: 20px;
+      font-family: 'Dancing Script' ;
+      color: grey;
+    }
+    .p-heading {
+      font-size: 10px ;
+    }
+    .title-detail {
+      font-size: 20px ;
+    }
+  }
+
+  @media only screen and (max-height: 665px) {
+    .icon {
+      display: none;
+    }
+    .chevron2{
+      margin-bottom: 50px;
+    }
   }
 
 
