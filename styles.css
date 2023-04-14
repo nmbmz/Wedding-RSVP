@@ -6,14 +6,6 @@
   }
 }
 
-@media only screen and (max-height: 800px){
-  .container .headerdiv{
-    height: 90vh !important; 
-    margin-bottom: -10vh !important;
-    margin-top: -15vh !important;
-}
-}
-
 @media only screen and (max-width: 499px){
   
   .headerdiv{
@@ -65,8 +57,7 @@
     font-size: 15px !important;
   }
   .chevron {
-    margin-top: 10em !important;
-    margin-bottom: 3em !important;
+    margin-top: 7vh !important;
   }
 
 
@@ -410,6 +401,8 @@ body{
     border-radius: 15px;
     padding: 5px;
   }
+
+
   .chevron:hover {
     background-color: #b1afae;
     text-decoration: none;
@@ -430,6 +423,8 @@ body{
     text-decoration: none;
     color: black;
   }
+
+
 
 
 
