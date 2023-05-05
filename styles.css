@@ -1,3 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Dancing Script';
+  background: #e9c3d1;
+}
+
+.m-rsvp {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.rsvp-p-heading {
+  font-family: 'Dancing Script';
+  font-size: 15px;
+}
+
+.rsvp-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.rsvp-inner-outer-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding: 50px;
+  background: #F9F5F3 url("./flowerframe.png") no-repeat center center fixed;
+  background-size: cover;
+  z-index: 1;
+}
+
+.rsvp-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgba(246, 242, 242, 0.5);
+  z-index: 2;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: semi-bold;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+fieldset {
+  border: 0;
+  margin-bottom: 20px;
+}
+
+.full-width label:nth-of-type(1) {
+  display: block;
+  font-size: 18px;
+}
+.full-width {
+  margin-bottom: 10px;
+}
+.name {
+  margin-top: 5px;
+  text-decoration: underline;
+  text-align: left;
+  justify-items: left;
+  font-family: 'Dancing script';
+  color: grey;
+}
+
+.full-width input {
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+  line-height: 28px;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+}
+
+.half-width label {
+  display: inline-flex;
+  margin: 15px;
+  margin-right: 20px;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.half-width input {
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  line-height: 28px;
+  font-size: 14px;
+  outline: none;
+  width: 70px;
+  text-align: center;
+}
+.half-width {
+  margin-bottom: 10px;
+}
+
+.checkbox input {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  height: 28px;
+  width: 28px;
+  background-color: transparent !important;
+}
+
+.s-heading {
+  font-size: 25px;
+}
+
+
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 28px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 27px;
+  width: 27px;
+  background-color: inherit;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+#checkmark2 {
+  padding-right: 20px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: inherit;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid rgba(0, 0, 0, 0.5);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.submit {
+  position: inline-block;
+  background: transparent;
+  border-radius: 20px;
+  border-color: black;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 22px;
+  outline: none;
+  font-family: "cormorant Garamond";
+  margin-top: 10px;
+}
+
+
+input, button {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.popup {
+  display: none;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.close {
+  font-size: 10px;
+  height: 20px;
+}
+
+.btn {
+  display: flex !important;
+  justify-content: end;
+}
+
+.submit {
+  margin-top: 30px;
+  margin-left: 120px;
+}
+
+
+
 @import "https://unpkg.com/transition-style";
 
 .surah {
@@ -176,6 +420,7 @@ body{
   color: grey;
   height: 100vh;
 }
+
 .rsvp {
   background-color: rgb(246, 216, 222);
   opacity: calc(0.8);
@@ -186,7 +431,15 @@ body{
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease-in-out;
+  display: inline-block !important;
 }
+
+.rsvping {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .rsvp:hover {
   background-color: #b1afae;
   text-decoration: none;
@@ -293,6 +546,20 @@ body{
     animation: 3s cubic-bezier(.25, 1, .30, 1) square-in-center both;
     animation-delay: 2.5s;
   }
+
+
+  @keyframes wipe-in-up {
+    from {
+      clip-path: inset(100% 0 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:wipe:up"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
+  }
   
   * {
     padding: 0;
@@ -355,7 +622,7 @@ body{
     opacity: calc(0.8);
     border-radius: 15px;
     padding: 5px;
-    animation: shake 1s 4.5s 0.5;
+    animation: shake 1.5s 4.5s 0.5;
   }
   .chevron2:hover {
     background-color: #b1afae;
@@ -502,10 +769,3 @@ body{
       margin-bottom: 50px;
     }
   }
-
-
-
-
-
-
-
