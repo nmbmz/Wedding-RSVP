@@ -1,56 +1,98 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="rsvp.css">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/transition-style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <link rel="stylesheet" href="styles.css">
-
-
-	<title>RSVP</title>
+    
 </head>
-
 <body>
-      <div class="parent" transition-style="in:square:hesitate">
-        <div class="details">
-            <a href="index.html"><img class="chevron2" src="chevrons (1).png" alt=""></a>
-            <br>
-            <img src="calendar.svg" alt="calender-icon" class="icon">
-            <h1 class="heading">Our Wedding Day</h1>
-            <p class="p-heading">Sunday, 19 Nov 2023</p>
-            <img src="clock.svg" alt="time-icon" class="icon">
-            <h1 class="heading">Details</h1>
-            <p class="p-heading">Solemnisation : 09:00 am - 10:30 am<br>
-                Reception : 11:30 pm - 1:30 pm<br>
-            </p>
-            <img src="wedding-ring.svg" alt="location-icon" class="icon">
-            <h1 class="heading">Location</h1>
-            <p class="p-heading">AMARIS D ARENA<br>
-            511 Upper Jurong Rd, Arena Country Club, <br>Singapore 638366<br></p>
-            <div class="text-box" transition-style="in:square:center2">
-                <p class="title-detail">
-                    we hope to see you there
+    <div class="rsvping">
+        <div class="parent" transition-style="in:square:hesitate">
+            <div class="details">
+                <a href="index.html"><img class="chevron2" src="chevrons (1).png" alt=""></a>
+                <br>
+                <img src="calendar.svg" alt="calender-icon" class="icon">
+                <h1 class="heading">Our Wedding Day</h1>
+                <p class="p-heading">Sunday, 19 Nov 2023</p>
+                <img src="clock.svg" alt="time-icon" class="icon">
+                <h1 class="heading">Details</h1>
+                <p class="p-heading">Solemnisation : 09:00 am - 10:30 am<br>
+                    Reception : 11:30 pm - 1:30 pm<br>
                 </p>
+                <img src="wedding-ring.svg" alt="location-icon" class="icon">
+                <h1 class="heading">Location</h1>
+                <p class="p-heading">AMARIS D ARENA<br>
+                511 Upper Jurong Rd, Arena Country Club, <br>Singapore 638366<br></p>
+                <div class="text-box" transition-style="in:square:center2">
+                    <p class="title-detail">
+                        we hope to see you there
+                    </p>
+                </div>
+                <div><button id="button" class="rsvp" transition-style="in:square:center2"><a >RSVP</a></button></div>
+                
             </div>
-            <button class="rsvp" type="submit" transition-style="in:square:center2" ><a class="rsvp" href="#">RSVP</a></button>
+          </div>
+    </div>
+
+    <div class="popup">
+        <div class="popup-content" transition-style="in:square:hesitate">
+            <div class="rsvp-container">
+                <div class="rsvp-inner-outer-container">
+                    <div class="rsvp-inner">
+                        <div class="btn">
+                            <img id="close" class="close" src="./x-mark.png" alt="">
+                        </div>
+                        <h1 class="heading m-rsvp">
+                          RSVP
+                        </h1>
+                        
+                        <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+                          <fieldset class="full-width">
+                            <label class="name name-heading">Name(s)</label>
+                            <input type="text" id="name1" name="entry.877086558" placeholder="insert name of attendees"/><input id="name2" name ="entry.1460693819" type="text" /><input id="name3" name="entry.2117734519" type="text" />
+                          </fieldset>
+                          <fieldset class="half-width">
+                            <label class="name">Total guests: </label><input id="guest" name="entry.1498135098"type="text" />
+                          </fieldset>
+                          <fieldset class="checkbox">
+                            <label class="container s-heading">Yes, we'll be there! <input id="yes" name="entry.393842320" value="Yes, we'll be there!" type="checkbox" ><span class="checkmark"></span></label>
+                          </fieldset>
+                          <fieldset class="checkbox">
+                            <label class="container s-heading"> Sorry, we can't make it. <input id="no" name="entry.419177863" value="Sorry, we can't make it" type="checkbox" ><span class="checkmark" id="checkmark2"></span></label>
+                          </fieldset>
+                          <button type="submit" id="send" class="rsvp submit">submit</button>
+                        </form>
+                        <h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:grey"> Your form has been submitted, Thank you!</h3>
+                      </div>
+                    </div>
+                </div>
         </div>
-      </div>
-      
+    </div>
+ 
+</script>
 
-
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
