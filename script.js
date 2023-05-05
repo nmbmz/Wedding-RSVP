@@ -15,5 +15,48 @@ $(function() {
     });
   
   });
+
+
+  document.getElementById("button").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "flex";
+    document.querySelector(".rsvping").style.display = "none";
+})
+
+document.getElementById("close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+    document.querySelector(".rsvping").style.display = "inline-block";
+})
+
+
+function postToGoogle() {
+  var field1 = $("#name1").val();
+  var field2 = $("#name2").val();
+  var field3 = $("#name3").val();
+  var field4 = $("#guest").val();
+  var field5 = $("#yes").is(":checked") ? $("#yes").val() : "";
+  var field6 = $("#no").is(":checked") ? $("#no").val() : "";
+   
+
+
   
-  // https://codepen.io/anon/pen/XRYrPz?editors=0110
+
+  $.ajax({
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSd9b-6U8esoE7-WihtD3gj8cIPXfCZ3JgCeE_Uhm6JDMTKbvQ/formResponse?",
+      data: {"entry.877086558": field1, "entry.1460693819": field2, "entry.2117734519": field3, "entry.1498135098": field4, "entry.393842320":
+      field5, "entry.419177863":
+      field6},
+      type: "POST",
+      dataType: "xml",
+      success: function(d)
+      {
+      },
+      error: function(x, y, z)
+          {
+
+              $('#success-msg').show();
+              $('#form').hide();
+              
+          }
+  });
+  return false;
+}
