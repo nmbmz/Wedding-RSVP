@@ -1,61 +1,93 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Bellefair&family=Cormorant+Garamond:wght@300&family=Monsieur+La+Doulaise&family=Mr+De+Haviland&family=Raleway:wght@100&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/transition-style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <link rel="stylesheet" href="styles.css">
-
-
-	<title>RSVP</title>
+    <title>Document</title>
 </head>
-
 <body>
-      <div class="parent" transition-style="in:square:hesitate">
-        <div class="parents" style="padding-top: 10px;">
-            <div class="" style="text-align: -webkit-center;">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="">
-                            <div class="parents"">
-                                <div id="wrapper">
-                                    <h5 class="ust_text" >بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</h5>
-                                    <h6 class="bismillah" >In the name of Allah swt, the Most Beneficient, the Most Merciful</h6>
-                                    <h5 class="ust_text2 typewriter1" transition-style="in:square:center"> WALIMATUL URUS | THE WEDDING OF</h5>
-                                    <div class="main-heading">
-                                        <h1 transition-style="in:circle:center">Siti Khadijah<br><span class="and">&</span><br> Nur Muhammad</h1>
-                                    </div>
-                                    <img src="/wedding invite rsvp/nm.png" alt="groom" class="icons groom" transition-style="in:circle:hesitate">
-                                    <img src="/wedding invite rsvp/sk.png" alt="bride" class="icons bride" transition-style="in:circle:hesitate">
-                                    <div class="surah">
-                                       <h5 transition-style="in:wipe:right"> وَخَلَقْنَاكُمْ أَزْوَاجًا
-                                    <br></h5><h6 transition-style="in:wipe:right">
-                                    "And we created you in pairs" 
-                                    <br></h6><h6 transition-style="in:wipe:right" id="surah" style="font-size: 12px;">Quran | an-Naba' | 78:8</h6>
-                                    <a href="page2.html"><img class="chevron" src="chevrons.png" alt=""></a>
-                                    </div>
-                                </div>
-                              </div>
+    <div class="main">
+                <div class="bg-image-1" transition-style="in:custom:circle-swoop">
+                    <div class="rsvping">
+                        <div class="display-1" style=" padding-left:2em">
+                            <div class="font-1 heading-1">
+                            <h2 class="heading-1"  style=" font-family: 'Bellefair', serif; 
+                            font-size: clamp(0.55rem, 0.2rem + 1vw, 0.75rem); color: rgb(43, 43, 43); line-height: 10px; letter-spacing: 0.1em">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</h2>
+                            <h2 class="heading-2"  style=" font-family: 'Cormorant Garamond', serif; font-weight:bold; color:rgb(0, 0, 0); font-size: clamp(0.5rem, 0.15rem + 1vw, 0.64rem);  line-height: 10px; letter-spacing: 0.17em; font-weight: 1000; " >WALIMATUL URUS | THE WEDDING OF</h2> 
                         </div>
+                        <div class="couple">
+                            <h1 class="groom-1" transition-style="in:wipe:right" style=" font-family: 'Aboreto', cursive; font-size: clamp(1.3rem, 0.4rem + 5vw, 2rem) ; color: rgb(153, 86, 89); line-height: 27px; letter-spacing: 0.089em; --para-spacing: 0; text-transform: uppercase; --head-indent: 0; --numeric-list-marker: none; list-style-type: none;">Muhammad</h1> 
+                            <span class="and-1" transition-style="in:circle:center" style= "font-size: clamp(1.4rem, 0.4rem + 8vw, 3rem); color: rgb(153, 86, 89, 0.8); font-family: 'Monsieur La Doulaise', cursive; line-height: 20px; letter-spacing: 0em; --para-spacing: 0; text-transform: none; --head-indent: 0; --numeric-list-marker: none; list-style-type: none;">and</span> 
+                            <h1 class="bride-1" transition-style="in:wipe:left1" style=" font-family: 'Aboreto', cursive; font-size: clamp(1.3rem, 0.4rem + 5vw, 2rem); color: rgb(153, 86, 89); line-height: 27px; letter-spacing: 0.089em; --para-spacing: 0; text-transform: uppercase; --head-indent: 0; --numeric-list-marker: none; list-style-type: none;">Khadijah</h1>
+                        </div>
+                        
+                        <div class="font-1 date-1" style="padding-top: 1em;">
+                            <h3 class="date-en" style=" font-size: clamp(0.6rem, 0.15rem + 1vw, 0.8rem); letter-spacing:0.15em; font-weight: 900; color: rgb(43, 43, 43); margin: 0;">19th NOVEMBER 2023</h3>
+                            <h3 class="date-ar" style="font-size: clamp(0.6rem, 0.15rem + 1vw, 0.8rem); letter-spacing:0.15em; font-weight: 700; color: rgb(43, 43, 43); margin-top:0.4em;">5th JAMADILAWAL 1445H</h3>
+                        </div>
+                        <div class="font-1 location-1">
+                            <h4 class="address" style=" padding-top: 2em; text-transform: uppercase; font-size: clamp(0.6rem, 0.15rem + 1vw, 0.7rem); letter-spacing:0.15em; font-weight: 700; font-style: normal; color: rgb(43, 43, 43); text-decoration: none;">Amaris D' Arena<br>
+                                511 Upper Jurong Rd, Arena Country Club,<br>
+                                Singapore 638366</h4>
+                        </div>
+                        <div class="btn-rsvp"><button id="button" class="rsvp"><a>RSVP</a></button></div>
+                     </div>
                     </div>
+                 </div>   
+         </div>
+            <div class="popup">
+                <div class="popup-content">
+                    <div class="rsvp-container">
+                        <div class="rsvp-inner-outer-container">
+                            <div class="rsvp-inner">
+                                <div class="btn">
+                                    <img id="close" class="close" src="./x-mark.png" alt="">
+                                </div>
+                                <h1 class="heading m-rsvp">
+                                  RSVP<br><span class="rsvp-below" style="font-size: 20px;">by 21st October</span> 
+                                </h1>
+                                
+                                <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+                                  <fieldset class="full-width">
+                                    <label class="name name-heading">Name(s)</label>
+                                    <input type="text" id="name1" name="entry.877086558" placeholder="insert name of attendees"/ required><input id="name2" name ="entry.1460693819" type="text" /><input id="name3" name="entry.2117734519" type="text" />
+                                  </fieldset>
+                                  <fieldset class="half-width">
+                                    <label class="name">Total guests: </label><input id="guest" name="entry.1498135098"type="text" required />
+                                  </fieldset>
+                                  <fieldset class="checkbox">
+                                    <label class="container s-heading">Yes, we'll be there! <input id="yes" name="entry.393842320" value="Yes, we'll be there!" type="checkbox" ><span class="checkmark"></span></label>
+                                  </fieldset>
+                                  <fieldset class="checkbox">
+                                    <label class="container s-heading"> Sorry, we can't make it. <input id="no" name="entry.419177863" value="Sorry, we can't make it" type="checkbox" ><span class="checkmark" id="checkmark2"></span></label>
+                                  </fieldset>
+                                  <div class="submit-body"><button type="submit" id="send" class="rsvp submit">submit</button></div>
+                                  
+                                </form>
+                                <h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:grey"> Your form has been submitted, Thank you!</h3>
+                              </div>
+                            </div>
+                        </div>
                 </div>
             </div>
-          </div>
-      </div>
+      
 
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
