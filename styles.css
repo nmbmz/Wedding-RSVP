@@ -127,6 +127,7 @@
     }
     .name {
       margin-top: 5px;
+      margin-bottom: 8px;
       text-decoration: underline;
       text-align: left;
       justify-items: left;
