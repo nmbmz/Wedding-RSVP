@@ -51,7 +51,7 @@
   }
   
   .heading-1 {
-      padding-top: 7em;
+      padding-top: 5em;
   }
   
   .groom-1  {
@@ -262,12 +262,12 @@
       justify-content: center;
     }
     
-    .submit {
+    .rsvp .submit {
       position: inline-block;
       background: transparent;
       border-radius: 20px;
       border-color: black;
-      padding: 5px;
+      padding: 5px !important;
       color: rgba(0, 0, 0, 0.7);
       font-size: 22px;
       outline: none;
@@ -321,7 +321,7 @@
       text-decoration: none;
       transition: background-color 0.3s ease-in-out;
       display: inline-block !important;
-      font-family: 'Aboreto';
+      font-family: 'Aboreto', cursive; 
     }
     
     .rsvping {
