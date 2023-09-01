@@ -2,7 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
   body {
-      background-color: #f9f5f2;
+      background-color: #f8eee7;
       font-family: 'Raleway', sans-serif;
       padding: 0;
       margin: 0;
@@ -33,7 +33,7 @@
   }
   
   .bg-image-1 {
-      background-image: url(./flower-outline-bg.png);
+      background-image: url(./flower-bg-outline-drk.png);
       background-repeat: no-repeat;
       background-size: contain;
       z-index: -1;
@@ -93,7 +93,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url(./flower-outline-bg.png);
+      background-image: url(./flower-bg-outline-drk.png);
       background-repeat: no-repeat;
       background-size: contain;
       z-index: 1;
@@ -316,11 +316,12 @@
       border-color: transparent;
       padding: 6px;
       border: 1px solid #995659;
-      color: rgb(43, 43, 43);
+      color: black;
       text-align: center;
       text-decoration: none;
       transition: background-color 0.3s ease-in-out;
       display: inline-block !important;
+      font-family: 'Aboreto';
     }
     
     .rsvping {
@@ -440,4 +441,3 @@
       }
 
 
-      
