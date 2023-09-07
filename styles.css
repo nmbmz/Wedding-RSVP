@@ -148,6 +148,10 @@
       line-height: 28px;
       font-size: 18px;
     }
+
+    input#guest {
+      width: 30px;
+    }
     
     .half-width input {
       border: 0;
@@ -209,6 +213,26 @@
       margin-left: 10px;
       height: 27px;
       width: 27px;
+      background-color: inherit;
+      border: 2px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .i-heading {
+      font-size: 15px;
+    }
+
+    #groom.checkmark-i {
+      margin-top: 10px;
+      height: 12px;
+      width: 12px;
+      background-color: inherit;
+      border: 2px solid rgba(0, 0, 0, 0.5);
+    }
+
+    #bride.checkmark-i {
+      margin-top: 10px;
+      height: 12px;
+      width: 12px;
       background-color: inherit;
       border: 2px solid rgba(0, 0, 0, 0.5);
     }
