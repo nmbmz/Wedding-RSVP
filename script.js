@@ -20,6 +20,11 @@ $(function() {
   document.getElementById("button").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "flex";
     document.querySelector(".rsvping").style.display = "none";
+}) 
+
+  document.getElementById("button").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "flex";
+    document.querySelector(".rsvping").style.display = "none";
 })
 
 document.getElementById("close").addEventListener("click", function(){
@@ -30,8 +35,8 @@ document.getElementById("close").addEventListener("click", function(){
 
 function postToGoogle() {
   var field1 = $("#name1").val();
-  var field2 = $("#name2").val();
-  var field3 = $("#name3").val();
+  var field2 = $("#groom").is(":checked") ? $("#groom").val() : "";
+  var field3 = $("#bride").is(":checked") ? $("#bride").val() : "";
   var field4 = $("#guest").val();
   var field5 = $("#yes").is(":checked") ? $("#yes").val() : "";
   var field6 = $("#no").is(":checked") ? $("#no").val() : "";
