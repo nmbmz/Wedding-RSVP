@@ -93,6 +93,7 @@
       background-repeat: no-repeat;
       background-size: contain;
       z-index: 1;
+      height: 90vh;
       max-width: 480px;
     }
     
