@@ -65,3 +65,11 @@ function postToGoogle() {
   });
   return false;
 }
+
+
+const inps=document.querySelectorAll(".input-wrapper-2 input");
+inps.forEach(e=>e.addEventListener("click",ev=>{
+  inps.forEach(c=>{if(c!==e) c.checked=false})
+}))
+
+
